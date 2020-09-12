@@ -1,0 +1,115 @@
+.login {
+	position: relative;
+	min-width: 1255px;
+	height: 100vh;
+	min-height: 550px;
+	background: linear-gradient(90deg, rgba(255, 166, 92, 1) 0%, rgba(255, 138, 42, 1) 100%);
+	.main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 1255px;
+		height: 550px;
+		transform: translate(-50%, -50%);
+		.login_center {
+			position: relative;
+			float: right;
+			margin-top: 24px;
+			width: 511px;
+			height: 450px;
+			background-color: #fff;
+			border-radius: 4px;
+			border: 1px solid rgba(241, 241, 241, 1);
+			.qrcodeImg {
+				position: absolute;
+				top: -1px;
+				right: -1px;
+				cursor: pointer;
+			}
+			.content {
+				padding: 40px 87px 27px 88px;
+				.logo {
+					margin-bottom: 23px;
+				}
+				.icons {
+					font-size: 21px;
+				}
+				.codeBtn {
+					position: absolute;
+					top: 10px;
+					right: 20px;
+					color: #fd780b;
+					cursor: pointer;
+				}
+				.checked {
+					margin-left: 12px;
+				}
+				.agreement {
+					color: @font-color3;
+					font-size: 0.75rem;
+					&.primary {
+						color: @base-primary;
+					}
+				}
+				.ant-row.ant-form-item:last-child {
+					margin-bottom: 0;
+				}
+			}
+			// 以下为扫码登录
+			.phoneCode {
+				padding: 0 20px;
+				margin-top: 20px;
+				cursor: pointer;
+				span {
+					font-size: 10px;
+					margin-right: 10px;
+				}
+				p {
+					font-size: 18px;
+					color: rgba(51, 51, 51, 1);
+					margin: 0;
+					line-height: 18px;
+					font-weight: bold;
+				}
+			}
+			.code_box {
+				margin: 71px 145px 30px 146px;
+				.overdue {
+					position: absolute;
+					top: 111px;
+					left: 146px;
+					width: 220px;
+					height: 220px;
+					z-index: 99999999;
+					.text {
+						margin: 70px 0 20px 0;
+						text-align: center;
+						font-weight: bold;
+						font-size: 1rem;
+						color: @font-color1;
+					}
+					.refresh {
+						display: block;
+						width: 74px;
+						height: 28px;
+						background: @base-primary;
+						border-radius: 2px;
+						margin: 0 auto;
+						color: #fff;
+						text-align: center;
+					}
+				}
+				.overdued {
+					opacity: 0.2;
+				}
+			}
+			.holderText {
+				color: @font-color1;
+				line-height: 21px;
+				font-weight: bold;
+				text-align: center;
+				font-size: 16px;
+			}
+		}
+	}
+}

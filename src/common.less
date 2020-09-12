@@ -1,0 +1,73 @@
+/*
+ * @Author: 许凌霄
+ * @Date: 2020-06-28 12:42:56
+ * @LastEditors: 许凌霄
+ * @LastEditTime: 2020-09-12 16:56:59
+ * @Descripttion: 公共变量/样式 + 自定义antd主题色
+ */
+
+@import '~antd/dist/antd.less';
+
+@base-primary: #fd780b;
+@base-error: #fc0100;
+@font-color1: #333;
+@font-color2: #666;
+@font-color3: #999;
+@font-color4: #b7bbbf;
+@border-color1: #f1f1f1;
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	// scroll-behavior: smooth;
+}
+
+.lf {
+	float: left;
+}
+
+.rf {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.wb {
+	word-break: break-all;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+// 一行省略
+.ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// 多行省略 默认两行
+.ellipsis_line(@line: 2) {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: @line;
+	-webkit-box-orient: vertical;
+}
+
+@primary-color: @base-primary;
